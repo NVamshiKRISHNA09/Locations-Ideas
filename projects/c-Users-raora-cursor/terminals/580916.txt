@@ -1,0 +1,16 @@
+---
+pid: 10748
+cwd: "C:\\Users\\raora\\cursor"
+command: "Get-ChildItem -Path \"C:\\Program Files\\nodejs\",\"C:\\Users\\raora\\AppData\\Local\\fnm\",\"C:\\Users\\raora\\AppData\\Roaming\\nvm\",\"C:\\Users\\raora\\scoop\\apps\\nodejs\",\"C:\\Users\\raora\\AppData\\Local\\Programs\\cursorNVK\\resources\\app\" -Filter \"node.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 20 FullName; Get-ChildItem \"C:\\Users\\raora\\AppData\\Local\\Programs\\cursorNVK\\resources\\app\" -Filter \"node.exe\" -ErrorAction SilentlyContinue"
+title: "Search disk for node.exe installations"
+status: succeeded
+started_at: 2026-09-15T11:32:43.513Z
+running_for_ms: 282941   
+---
+
+
+---
+exit_code: 0
+elapsed_ms: 282939
+ended_at: 2026-09-15T11:37:26.452Z
+---

@@ -1,0 +1,90 @@
+# Groq-Only API + Location-Aware Problem/Solution Enhancement
+
+## What this changes
+
+The app currently supports OpenAI, Groq, and OpenRouter interchangeably. You want to:
+1. **Groq-only** — strip out OpenAI/OpenRouter references everywhere; hardcode Groq's base URL and only offer Groq models
+2. **Location-aware problems & solutions** — each idea card must prominently show the **local problem** and its **solution** tied to the specific location (lat/lon, city, country, nearby resources)
+3. **All idea properties** — make sure every field (`id`, `title`, `category`, `difficulty`, `localProblem`, `whyHere`, `softwareSketch`, `hardwareSketch`, `bomPreview`, `suggestedResources`, `tags`) is displayed on every IdeaCard
+
+---
+
+## Open Questions
+
+> [!IMPORTANT]
+> Which Groq models should appear in the dropdown? Suggested defaults:
+> - `llama-3.3-70b-versatile` (best quality, default)
+> - `llama-3.1-8b-instant` (fastest/cheapest)
+> - `mixtral-8x7b-32768` (long context)
+> - `gemma2-9b-it`
+
+> [!IMPORTANT]
+> Should the **API key modal** hide the Base URL field entirely (since it's always Groq), or keep it visible but locked/pre-filled?
+
+---
+
+## Proposed Changes
+
+### Backend — API Routes
+
+#### [MODIFY] [ideas/route.ts](file:///c:/Users/raora/.cursor/app/api/ideas/route.ts)
+- Replace `OPENAI_API_KEY` / `OPENAI_BASE_URL` / `OPENAI_MODEL` env vars with `GROQ_API_KEY` / `GROQ_MODEL`
+- Hardcode base URL to `https://api.groq.com/openai/v1`
+- Default model → `llama-3.3-70b-versatile`
+- Ensure the prompt asks for all fields including `localProblem` tied to specific location context
+
+#### [MODIFY] [chat/route.ts](file:///c:/Users/raora/.cursor/app/api/chat/route.ts) *(if it exists)*
+- Same Groq-only changes
+
+---
+
+### Lib / Store
+
+#### [MODIFY] [chat-store.ts](file:///c:/Users/raora/.cursor/lib/chat-store.ts)
+- Remove `apiBaseUrl` from `ApiSettings` — Groq URL is hardcoded
+- Rename storage key from `lia_api_key` → `lia_groq_key` (or just keep key name, update label)
+- Add a `groqModel` field with a Groq model enum
+
+---
+
+### Components
+
+#### [MODIFY] [ApiKeyModal.tsx](file:///c:/Users/raora/.cursor/components/ApiKeyModal.tsx)
+- **Remove** Base URL input entirely
+- **Change** placeholder from `sk-...` to `gsk_...` (Groq key prefix)
+- **Replace** model text input with a **dropdown** of Groq model options
+- Update link section to point only to `console.groq.com`
+- Update test URL to always use Groq's endpoint
+
+#### [MODIFY] [IdeaCard.tsx](file:///c:/Users/raora/.cursor/components/IdeaCard.tsx)
+- Add a visible **"📍 Local Problem"** section with the `localProblem` text and the location name
+- Add a **"💡 Why Here"** section showing `whyHere`
+- Show full `softwareSketch` and `hardwareSketch` (currently may be truncated)
+- Show full `bomPreview` list with all items
+- Show all `suggestedResources`
+- Show all `tags` as chips
+
+#### [MODIFY] [page.tsx](file:///c:/Users/raora/.cursor/app/page.tsx)
+- Update fallback notice text from "OpenAI API key" → "Groq API key"
+
+---
+
+### Environment
+
+#### [MODIFY] [.env](file:///c:/Users/raora/.cursor/.env) + [.env.example](file:///c:/Users/raora/.cursor/.env.example)
+- Replace `OPENAI_API_KEY` / `OPENAI_BASE_URL` / `OPENAI_MODEL` with `GROQ_API_KEY` and `GROQ_MODEL`
+
+---
+
+## Verification Plan
+
+### Automated
+```
+npm run build
+```
+
+### Manual
+- Open the API key modal → should show only Groq key field + model dropdown
+- Set a Groq key → test connection should succeed against `api.groq.com`
+- Set a location → ideas generate using Groq
+- Each idea card should show: local problem, why here, software/hardware sketch, full BOM, resources, tags

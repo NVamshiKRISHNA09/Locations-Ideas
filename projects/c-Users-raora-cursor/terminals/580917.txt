@@ -1,0 +1,72 @@
+---
+pid: 17820
+cwd: "C:\\Users\\raora\\cursor"
+command: "python -m venv .venv; .\\.venv\\Scripts\\python -m pip install -r requirements.txt"
+title: "Create venv and install Python dependencies"
+status: succeeded
+started_at: 2026-09-15T11:38:01.508Z
+running_for_ms: 72937    
+---
+Collecting fastapi==0.115.12 (from -r requirements.txt (line 1))
+  Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn==0.34.2 (from -r requirements.txt (line 2))
+  Downloading uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+Collecting python-dotenv==1.1.0 (from -r requirements.txt (line 3))
+  Downloading python_dotenv-1.1.0-py3-none-any.whl.metadata (24 kB)
+Collecting httpx==0.28.1 (from -r requirements.txt (line 4))
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting click>=7.0 (from uvicorn==0.34.2->-r requirements.txt (line 2))
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting h11>=0.8 (from uvicorn==0.34.2->-r requirements.txt (line 2))
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting anyio (from httpx==0.28.1->-r requirements.txt (line 4))
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 4))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 4))
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx==0.28.1->-r requirements.txt (line 4))
+  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading pydantic_core-2.46.5-cp313-cp313-win_amd64.whl.metadata (6.7 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.12->-r requirements.txt (line 1))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+Downloading uvicorn-0.34.2-py3-none-any.whl (62 kB)
+Downloading python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+Downloading pydantic_core-2.46.5-cp313-cp313-win_amd64.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 668.8 kB/s  0:00:03
+
+Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading idna-3.19-py3-none-any.whl (68 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Installing collected packages: typing-extensions, python-dotenv, idna, h11, click, certifi, annotated-types, uvicorn, typing-inspection, pydantic-core, httpcore, anyio, starlette, pydantic, httpx, fastapi
+
+
+Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.7.22 click-8.5.0 fastapi-0.115.12 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.19 pydantic-2.13.5 pydantic-core-2.46.5 python-dotenv-1.1.0 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.34.2
+
+[notice] A new release of pip is available: 26.0.1 -> 26.2.1
+[notice] To update, run: C:\Users\raora\cursor\.venv\Scripts\python.exe -m pip install --upgrade pip
+
+---
+exit_code: 0
+elapsed_ms: 72936
+ended_at: 2026-09-15T11:39:14.444Z
+---

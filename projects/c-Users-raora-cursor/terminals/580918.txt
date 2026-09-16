@@ -1,0 +1,91 @@
+---
+pid: 11020
+cwd: "C:\\Users\\raora\\cursor"
+command: ".\\.venv\\Scripts\\python server.py"
+title: "Start FastAPI dev server on port 8000"
+status: running  
+started_at: 2026-09-15T11:39:21.466Z
+running_for_ms: 633359   
+---
+INFO:     Will watch for changes in these directories: ['C:\\Users\\raora\\cursor']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [14620] using StatReload
+INFO:     Started server process [29192]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50366 - "GET /json/version HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49670 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56935 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56935 - "GET /static/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61271 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56889 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56895 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56896 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56897 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49700 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55078 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55078 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50537 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50537 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55632 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50291 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50291 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60036 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63468 - "POST /api/locality HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:63097 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63097 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63468 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63468 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63468 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61305 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53311 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53311 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53311 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61305 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61305 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51852 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51852 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59359 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50381 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50381 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51008 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60176 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60176 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52724 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52724 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64636 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64636 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56419 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56419 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52603 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52603 - "POST /api/ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58215 - "POST /api/locality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58215 - "POST /api/ideas HTTP/1.1" 200 OK
